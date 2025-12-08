@@ -1,0 +1,22 @@
+激活虚拟环境
+要进入你创建的虚拟环境，请在终端中执行以下命令：
+source ~/face_env/bin/activate
+成功激活后，你会看到命令提示符前面出现 (face_env)，表示当前已在虚拟环境中。
+
+在虚拟环境中安装必要的包
+激活环境后，可以安装你的项目所需的包：
+pip install opencv-python numpy dlib imutils pyserial
+运行你的脚本
+安装完依赖后，可以在虚拟环境中运行脚本：
+source ~/face_env/bin/activate
+python /home/pi/Desktop/face/eye_detect.py
+退出虚拟环境
+完成工作后，输入以下命令退出虚拟环境：
+deactivate
+每次需要运行程序时，记得先激活虚拟环境。
+
+使用底层控制gpio
+source ~/face_env/bin/activate
+sudo ~/face_env/bin/python /home/pi/Desktop/face/eye_detect.py
+
+

@@ -1,0 +1,20 @@
+sudo apt install python3-venv python3-full
+
+python3 -m venv ~/face_env
+
+source ~/face_env/bin/activate
+
+pip install opencv-python numpy dlib imutils
+
+##############################################
+# 安装必要工具
+sudo apt install python3-venv python3-full
+
+# 创建虚拟环境
+python3 -m venv ~/face_env
+
+# 激活虚拟环境
+source ~/face_env/bin/activate
+
+# 在虚拟环境中安装包
+pip install opencv-python numpy dlib imutils

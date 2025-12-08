@@ -1,0 +1,37 @@
+我理解您的不满。确实，之前的方法过于复杂。让我提供一个最简单直接的解决方案：
+
+## 解决dlib缺失问题
+
+在树莓派终端中运行以下命令安装dlib和其它必要组件：
+
+````bash
+# 首先激活您的虚拟环境
+source ~/face_env/bin/activate
+
+# 安装依赖
+sudo apt-get update
+sudo apt-get install -y cmake libopenblas-dev
+
+# 安装dlib和imutils
+pip install dlib imutils
+
+# 如果编译安装太慢，可以尝试预编译版本（根据您的Python版本选择）
+# pip install https://github.com/jloh02/dlib/releases/download/v19.22/dlib-19.22.99-cp39-cp39-linux_aarch64.whl
+````
+
+## GPIO直接控制（简化版）
+
+使用sudo运行程序，确保能够访问GPIO：
+
+````bash
+sudo python /home/pi/Desktop/face/eye_detect.py
+````
+
+如果仍有问题，把SIMULATION_MODE设为True，让程序能运行起来：
+
+````python
+# 将此行修改为True
+SIMULATION_MODE = True
+````
+
+最简单的解决方案就是这些。希望对您有所帮助。

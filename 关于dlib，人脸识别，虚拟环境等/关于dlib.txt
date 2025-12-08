@@ -1,0 +1,3 @@
+安装dlib输入：cd /home/pi/Desktop
+chmod +x install_dlib.sh
+./install_dlib.sh
