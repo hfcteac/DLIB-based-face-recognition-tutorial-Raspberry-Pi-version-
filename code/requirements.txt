@@ -1,0 +1,17 @@
+# Python依赖包列表
+# Python Dependencies for Face Recognition on Raspberry Pi
+
+# 计算机视觉库
+opencv-python==4.8.1.78
+
+# 深度学习和数值计算
+numpy==1.24.3
+
+# dlib - 人脸检测和识别
+dlib==19.24.2
+
+# 图像处理
+Pillow==10.0.0
+
+# 数据序列化
+pickle-mixin==1.0.2
